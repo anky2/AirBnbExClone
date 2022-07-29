@@ -3,7 +3,7 @@ import cardImg from "../images/katie-zaferes.png"
 import star from "../images/star.png"
 import "../components/Card.css"
 
-function Card() {
+function Card(props) {
     return (
         <div className ="card">
             <div className="photo-div">
@@ -11,11 +11,12 @@ function Card() {
             </div>
             <div className="description">
                 <img src={star} className="star-img"/>
-                <span className="gray">(6) .</span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount})</span>
+                <span className="gray">{props.country}</span>
             </div>
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className = "bold">From $136</span> / person</p>
+            <p>{props.title}</p>
+            <p><span className = "bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
