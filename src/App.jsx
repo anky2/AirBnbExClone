@@ -11,12 +11,7 @@ function App() {
         return (
             <Card 
                 key={item.id}
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
+                item={item}
             />
         )
     })
@@ -24,9 +19,10 @@ function App() {
       return (
         <div>
           <Navbar />
-          <section className="cards-list">
-                {cards}
-            </section>
+          <Hero />
+          <div className="cards-list">
+            {cards}
+          </div>
         </div>
       )
 }

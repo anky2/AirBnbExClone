@@ -1,6 +1,8 @@
 .cards-list {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    overflow-x: auto;
+    flex-direction: row;
+    gap: 120px;
+    padding-top: 100px;
+    justify-content:center;
+    align-items: center;
 }
