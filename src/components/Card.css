@@ -2,6 +2,9 @@
 .card {
     width:275px;
     font-size: 24px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
 }
 
 .photo {
